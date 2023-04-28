@@ -40,10 +40,6 @@ def upgrade() -> None:
     )
     op.create_index("idx_usr_fst_lst_name", "user",
                     ["first_name", "last_name"])
-    # Update Book Table
-    # op.add_column("books", sa.Column("owner_id", sa.String, nullable=True))
-    # op.create_foreign_key("fk_book_owner", "books",
-    #                      "users", ["owner_id"], ['id'])
 
     # Data seed for first user
     op.bulk_insert(user_table, [

@@ -1,7 +1,7 @@
 """generate company table
 
 Revision ID: 7ed6bfc4b036
-Revises: 
+Revises:
 Create Date: 2023-04-28 10:06:38.289630
 
 """
